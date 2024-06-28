@@ -1,7 +1,9 @@
 package com.mrk.hmdp.service;
 
-import com.mrk.hmdp.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.mrk.hmdp.dto.LoginFormDTO;
+import com.mrk.hmdp.dto.Result;
+import com.mrk.hmdp.entity.User;
 
 /**
  * <p>
@@ -13,4 +15,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IUserService extends IService<User> {
 
+    Result sendCode(String phone);
+
+    Result login(LoginFormDTO loginForm);
 }

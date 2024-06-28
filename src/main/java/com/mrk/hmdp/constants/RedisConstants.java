@@ -6,17 +6,17 @@ package com.mrk.hmdp.constants;
  */
 public class RedisConstants {
 
-    // 登录验证码前缀
-    public static final String LOGIN_CODE_KEY = "login:code:";
-
-    // 登录验证码有效期 200 min
-    public static final Long LOGIN_CODE_TTL = 200L;
-
     // 登录用户前缀
     public static final String LOGIN_USER_KEY = "login:user:";
 
     // 登录用户有效期 3600 min
     public static final Long LOGIN_USER_TTL = 3600L;
+
+    // 登录验证码前缀
+    public static final String LOGIN_CODE_KEY = "login:captcha:";
+
+    // 登录验证码有效期 200 min
+    public static final Long LOGIN_CODE_TTL = 200L;
 
     // 空对象的有效期
     public static final Long CACHE_NULL_TTL = 2L;
